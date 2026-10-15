@@ -25,7 +25,7 @@ jobs:
           pip install pytest==8.4.1
           pytest tests/ -v
         continue-on-error: false
-      - name: Deploy to Touge Server via SSH (Port 50241)
+      - name: Deploy to Touge Server via SSH
         run: |
           # 配置SSH环境（强制兼容RSA私钥）
           mkdir -p ~/.ssh
